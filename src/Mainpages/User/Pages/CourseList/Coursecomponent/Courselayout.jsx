@@ -1,5 +1,5 @@
 import React from 'react'
-import './Courselayout.css'
+import './courselayout.css'
 import { Link } from 'react-router-dom'
 import Input from '../../../Components/Input/Input'
 import { assets } from '../../../../../assets/assets'
