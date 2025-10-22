@@ -1,0 +1,148 @@
+.Preview {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.Preview_box {
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.Preview_box:hover {
+  transform: translateY(-1px);
+}
+
+.Preview_thumbnial {
+  width: 100%;
+  height: 34%;
+  overflow: hidden;
+}
+
+.Preview_thumbnial img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Preview_detils {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.Preview_detils p {
+  display: flex;
+  gap: 6px;
+  font-weight: 500;
+  color: #dc2626; /* red warning tone */
+margin-bottom: 10px;
+}
+
+.Preview_detils p img {
+  width: 18px;
+  height: 18px;
+}
+
+.Preview_pricing {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.DiscountP p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.ActualP p {
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.discount p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #16a34a; /* green for discount */
+}
+
+.buyNow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buyNow button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.8rem 10rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buyNow button:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+dl {
+  width: 100%;
+  padding: 0 2rem 2rem;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 10px;
+}
+dd {
+    margin-bottom: 4px;
+}
+dl dt {
+    
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #374151;
+  font-size: 1rem;
+  margin-bottom: 0.1rem;
+}
+
+dl dt span {
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Preview_box {
+    width: 90%;
+  }
+
+  .Preview_detils {
+    padding: 1rem;
+  }
+
+  .Preview_pricing {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .buyNow button {
+    width: 100%;
+  }
+}

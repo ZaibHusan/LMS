@@ -1,0 +1,168 @@
+.Footer {
+  width: 100%;
+  background-color: #111827;
+  color: #ffffff;
+  padding: 3rem 0 1rem 0;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+
+}
+
+/* Footer container */
+.Footer_box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* --- Left Section --- */
+.Footer_box1 {
+  flex: 1;
+  min-width: 250px;
+}
+
+.Footer_box1 img {
+  width: 120px;
+  margin-bottom: 1rem;
+  filter: invert(100%);
+}
+
+.Footer_box1 p {
+  color: #d1d5db;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: start;
+}
+
+/* --- Middle Section --- */
+.Footer_box2 {
+  flex: 1;
+  min-width: 200px;
+}
+
+.Footer_box2 h2 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.Footer_box2 h2::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #2563EB;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  border-radius: 2px;
+}
+
+.Footer_box2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Footer_box2 ul li {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.Footer_box2 ul li:hover {
+  color: #2563EB;
+}
+
+/* --- Right Section (Newsletter) --- */
+.Footer_box3 {
+  flex: 1;
+  min-width: 300px;
+}
+
+.Footer_box3 h2 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.Footer_box3 p {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.Footer_input {
+  display: flex;
+  align-items: center;
+  background-color: #1f2937;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.Footer_input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.Footer_input input::placeholder {
+  color: #9ca3af;
+}
+
+.Footer_input button {
+  background-color: #2563EB;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 2rem;
+}
+
+.Footer_input button:hover {
+  background-color: #1d4ed8;
+}
+
+/* --- Bottom Line --- */
+.Footer hr {
+  width: 80%;
+  margin: 2rem auto 1rem auto;
+  border: 0;
+  border-top: 1px solid #374151;
+}
+
+.Footer p {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .Footer_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .Footer_input {
+    flex-direction: column;
+    border-radius: 1rem;
+  }
+  .Footer_input button {
+    width: 100%;
+    border-radius: 0;
+  }
+}

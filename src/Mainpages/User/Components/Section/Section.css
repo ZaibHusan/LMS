@@ -1,0 +1,24 @@
+.Section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.Section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color:#1f2937e3;
+    letter-spacing: 1px;
+}
+
+.Section p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.6rem;
+    color: rgba(0, 0, 0, 0.441);
+    letter-spacing: 1px;
+}

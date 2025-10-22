@@ -1,0 +1,61 @@
+.Input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.6em;
+}
+
+.Input_box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+}
+
+.Input_box:hover {
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+
+}
+
+.Input_box img {
+  width: 22px;
+  height: 22px;
+  margin-right: 0.75rem;
+  opacity: 0.8;
+}
+
+.Input_box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #1e3a8a;
+  background: transparent;
+}
+
+.Input_box input::placeholder {
+  color: #9ca3af;
+}
+
+.Input_box button {
+  background-color: #2563EB;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.Input_box button:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}

@@ -1,0 +1,120 @@
+.Cpc {
+    width: 100%;
+    min-height: 100vh;
+    background: #E2FCFE;
+    padding-top: 12vh;
+}
+
+.Cpc_box {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+
+}
+
+.Cpc_box_left {
+    width: 50%;
+    height: 100%;
+}
+
+.Cpc_box_left_part1 {
+    padding: 2rem;
+}
+
+.Cpc_title {
+    font-size: 1.1em;
+    color: black;
+    margin-bottom: 1.6rem;
+}
+
+.Cpc_dec {
+    color: rgba(0, 0, 0, 0.562);
+    font-size: 1.1em;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.Cpc_Rating {
+    display: flex;
+    margin-top: 2rem;
+    gap: 6px;
+    color: rgba(0, 0, 0, 0.562);
+    margin-bottom: 1rem;
+}
+
+.Cpc_Rating_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Cpc_Rating_img img {
+    width: 16px;
+    height: 16px;
+}
+
+.blow {
+    color: rgba(0, 0, 255, 0.737);
+}
+
+.Cpc_box_left_part2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 40vh;
+    overflow: auto;
+}
+
+.structure {
+    padding: 2rem;
+}
+
+
+
+.Cpc_decription {
+    padding: 2rem;
+}
+
+.Cpc_decription h2 {
+    font-size: 1.1em;
+    color: black;
+    margin-bottom: 1.6rem;
+}
+
+.Cpc_decription_box {
+    padding: 1rem;
+    color: rgba(0, 0, 0, 0.562);
+    font-size: 1.1em;
+    overflow: hidden;
+    width: 100%;
+}
+
+.Cpc_decription_box p {
+    margin-bottom: 1rem;
+}
+
+.Cpc_decription_box ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.Cpc_decription_box li {
+    margin-bottom: 0.5rem;
+}
+
+.Cpc_decription_box h2 {
+    font-weight: bold;
+    -wkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+}
+
+.Cpc_box_right {
+    width: 50%;
+    height: 100%;
+}

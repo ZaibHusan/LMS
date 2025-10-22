@@ -1,0 +1,131 @@
+.Banner {
+    width: 100%;
+    height: 90vh;
+  background: linear-gradient(
+    to bottom,
+    #2563EB 0%,
+    #ffffff 100%
+  );
+  padding-top: 10%;
+  margin-bottom: 4rem;
+
+}
+
+.Banner_box {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+
+.Banner_txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Banner_main_txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Banner_main_txt h1 {
+    font-size: 3rem;
+    font-weight:bold;
+    color: #fff;
+    letter-spacing: 1px;
+    -wekit-text-fill-color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.sketch {
+    width: 76%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+
+.sketch img {
+    filter: invert(80%);
+    width: 14rem;
+    height: 1.2rem;
+}
+
+.Banner_txt_dec {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.Banner_txt_dec p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.486);
+    letter-spacing: 1px;
+}
+
+.yellow {
+    color: yellow;
+}
+
+
+/* lets edit the last part of the websit banner  */
+
+
+.Banner_last {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.Banner_last_p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.Banner_last_p p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.71);
+    letter-spacing: 1px;
+}
+
+.Banner_list_companies {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    margin-top: 2rem;
+    gap: 4rem;
+}
+
+
+
+.company img {
+    width: 100px;
+    height: 100px;
+}

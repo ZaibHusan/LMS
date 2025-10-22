@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./lms_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/src/assets/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lms</title>
+  <style type="text/css" id="operaUserStyle">
+  video {
+    filter: -opera-shader(url(data:text/plain;base64,Ly8gaHR0cHM6Ly9naXRodWIuY29tL0dQVU9wZW4tRWZmZWN0cy9GaWRlbGl0eUZYLUNBUwovLyB2MwoKdW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwp1bmlmb3JtIGZsb2F0MiBpTW91c2U7CnVuaWZvcm0gZmxvYXQgaUFyZ3NbMV07Cgpjb25zdCBmbG9hdCBFUFNJT04gPSAwLjE7CmNvbnN0IGZsb2F0IFZfTUlOID0gMDsKY29uc3QgZmxvYXQgVl9MT1cgPSAwLjI1Owpjb25zdCBmbG9hdCBWX01FRCA9IDAuNTsKY29uc3QgZmxvYXQgVl9ISUdIID0gMC43NTsKY29uc3QgZmxvYXQgVl9NQVggPSAxOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmZsb2F0MyBwaXhlbChpbnQgeCwgaW50IHksIGZsb2F0MiB4eSkgewogICAgcmV0dXJuIGlDaHVuay5ldmFsKHh5ICsgZmxvYXQyKHgsIHkpKS5yZ2I7Cn0KCmZsb2F0MyBzaGFycGVuKGZsb2F0MiB4eSkgewogICAgZmxvYXQzIGYgPQogICAgICAgIHBpeGVsKC0xLCAtMSwgeHkpICogIDEgKwogICAgICAgIHBpeGVsKCAwLCAtMSwgeHkpICogLTEgKwogICAgICAgIHBpeGVsKCAxLCAtMSwgeHkpICogIDEgKwoKICAgICAgICBwaXhlbCgtMSwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMCwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMSwgMCwgeHkpICogLTEgICsKCiAgICAgICAgcGl4ZWwoLTEsIDEsIHh5KSAqIDEgICArCiAgICAgICAgcGl4ZWwoIDAsIDEsIHh5KSAqIC0xICArCiAgICAgICAgcGl4ZWwoIDEsIDEsIHh5KSAqIDE7CiAgICByZXR1cm4gZiAvIC0xOwp9CgpmbG9hdDQgUkdYMihmbG9hdDIgeHkpIHsKICAgIGZsb2F0NCBjb2xvciA9IGlDaHVuay5ldmFsKHh5KTsKCiAgICBpZiAoaUNodW5rU2l6ZS54ICogaUNodW5rU2l6ZS55IDwgTUlOX0FSRUEpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKGlDaHVua1NpemUueSA8IE1JTl9TVFJJUCB8fCBpQ2h1bmtTaXplLnggPCBNSU5fU1RSSVApIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKHh5LnggPCBNQVJHSU4gfHwgeHkueCA+IChpQ2h1bmtTaXplLnggLSBNQVJHSU4pIHx8CiAgICAgICAgeHkueSA8IE1BUkdJTiB8fCB4eS55ID4gKGlDaHVua1NpemUueSAtIE1BUkdJTikpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgcmV0dXJuIGZsb2F0NChzaGFycGVuKHh5KSwgMSk7Cn0KCmZsb2F0IG1pbjMoZmxvYXQgeCwgZmxvYXQgeSwgZmxvYXQgeikgewogICAgcmV0dXJuIG1pbih4LCBtaW4oeSwgeikpOwp9CgpmbG9hdCBtYXgzKGZsb2F0IHgsIGZsb2F0IHksIGZsb2F0IHopIHsKICAgIHJldHVybiBtYXgoeCwgbWF4KHksIHopKTsKfQoKZmxvYXQgcmNwKGZsb2F0IHYpIHsKICAgIHJldHVybiAxIC8gdjsKfQoKZmxvYXQzIFJHWDMoZmxvYXQyIHh5LCBmbG9hdCBzdHJlbmd0aCkgewogICAgZmxvYXQzIGEgPSBwaXhlbCgtMSwgLTEsIHh5KTsKICAgIGZsb2F0MyBiID0gcGl4ZWwoIDAsIC0xLCB4eSk7CiAgICBmbG9hdDMgYyA9IHBpeGVsKCAxLCAtMSwgeHkpOwoKICAgIGZsb2F0MyBkID0gcGl4ZWwoLTEsIDAsIHh5KTsKICAgIGZsb2F0MyBlID0gcGl4ZWwoIDAsIDAsIHh5KTsKICAgIGZsb2F0MyBmID0gcGl4ZWwoIDEsIDAsIHh5KTsKCiAgICBmbG9hdDMgZyA9IHBpeGVsKC0xLCAxLCB4eSk7CiAgICBmbG9hdDMgaCA9IHBpeGVsKCAwLCAxLCB4eSk7CiAgICBmbG9hdDMgaSA9IHBpeGVsKCAxLCAxLCB4eSk7CgogICAgZmxvYXQgbW5SID0gbWluMyhtaW4zKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBtbkcgPSBtaW4zKG1pbjMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG1uQiA9IG1pbjMobWluMyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG1uUjIgPSBtaW4zKG1pbjMobW5SLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG1uRzIgPSBtaW4zKG1pbjMobW5HLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG1uQjIgPSBtaW4zKG1pbjMobW5CLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBtblIgPSBtblIgKyBtblIyOwogICAgbW5HID0gbW5HICsgbW5HMjsKICAgIG1uQiA9IG1uQiArIG1uQjI7CgogICAgZmxvYXQgbXhSID0gbWF4MyhtYXgzKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBteEcgPSBtYXgzKG1heDMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG14QiA9IG1heDMobWF4MyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG14UjIgPSBtYXgzKG1heDMobXhSLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG14RzIgPSBtYXgzKG1heDMobXhHLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG14QjIgPSBtYXgzKG1heDMobXhCLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBteFIgPSBteFIgKyBteFIyOwogICAgbXhHID0gbXhHICsgbXhHMjsKICAgIG14QiA9IG14QiArIG14QjI7CgogICAgZmxvYXQgcmNwTVIgPSByY3AobXhSKTsKICAgIGZsb2F0IHJjcE1HID0gcmNwKG14Ryk7CiAgICBmbG9hdCByY3BNQiA9IHJjcChteEIpOwoKICAgIGZsb2F0IGFtcFIgPSBzYXR1cmF0ZShtaW4obW5SLCAyIC0gbXhSKSAqIHJjcE1SKTsKICAgIGZsb2F0IGFtcEcgPSBzYXR1cmF0ZShtaW4obW5HLCAyIC0gbXhHKSAqIHJjcE1HKTsKICAgIGZsb2F0IGFtcEIgPSBzYXR1cmF0ZShtaW4obW5CLCAyIC0gbXhCKSAqIHJjcE1CKTsKCiAgICBhbXBSID0gc3FydChhbXBSKTsKICAgIGFtcEcgPSBzcXJ0KGFtcEcpOwogICAgYW1wQiA9IHNxcnQoYW1wQik7CgogICAgZmxvYXQgcGVhayA9IC1yY3AobWl4KDgsIDUsIHN0cmVuZ3RoKSk7CgogICAgZmxvYXQgd1IgPSBhbXBSICogcGVhazsKICAgIGZsb2F0IHdHID0gYW1wRyAqIHBlYWs7CiAgICBmbG9hdCB3QiA9IGFtcEIgKiBwZWFrOwoKICAgIGZsb2F0IHJjcFdlaWdodFIgPSByY3AoMSArIDQgKiB3Uik7CiAgICBmbG9hdCByY3BXZWlnaHRHID0gcmNwKDEgKyA0ICogd0cpOwogICAgZmxvYXQgcmNwV2VpZ2h0QiA9IHJjcCgxICsgNCAqIHdCKTsKCiAgICByZXR1cm4gZmxvYXQzKAogICAgICAgIHNhdHVyYXRlKChiLnIgKiB3UiArIGQuciAqIHdSICsgZi5yICogd1IgKyBoLnIgKiB3UiArIGUucikgKiByY3BXZWlnaHRSKSwKICAgICAgICBzYXR1cmF0ZSgoYi5nICogd0cgKyBkLmcgKiB3RyArIGYuZyAqIHdHICsgaC5nICogd0cgKyBlLmcpICogcmNwV2VpZ2h0RyksCiAgICAgICAgc2F0dXJhdGUoKGIuYiAqIHdCICsgZC5iICogd0IgKyBmLmIgKiB3QiArIGguYiAqIHdCICsgZS5iKSAqIHJjcFdlaWdodEIpKTsKfQoKCmZsb2F0NCBtYWluKGZsb2F0MiB4eSkgewoKICAgIGZsb2F0NCBvcmlnaW5hbENvbG9yID0gaUNodW5rLmV2YWwoeHkpOwogICAgaWYgKG9yaWdpbmFsQ29sb3IuYSA8IDEpIHsKICAgICAgICByZXR1cm4gaUNodW5rLmV2YWwoeHkpOwogICAgfQoKICAgIGZsb2F0IGludGVuc2l0eSA9IGlBcmdzWzBdOwogICAgZmxvYXQgc3RyZW5ndGggPSAwOwogICAgZmxvYXQzIGNvbG9yOwoKICAgIGlmIChpbnRlbnNpdHkgPCBWX01JTiArIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMC4xMDsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfTE9XIC0gRVBTSU9OICYmIGludGVuc2l0eSA8IFZfTE9XICsgRVBTSU9OKSB7CiAgICAgICAgc3RyZW5ndGggPSAwLjMzOwogICAgICAgIGNvbG9yID0gUkdYMyh4eSwgc3RyZW5ndGgpOwoKICAgIH0gZWxzZSBpZiAoaW50ZW5zaXR5ID4gVl9NRUQgLSBFUFNJT04gJiYgaW50ZW5zaXR5IDwgVl9NRUQgKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuNTsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfSElHSCAtIEVQU0lPTiAmJiBpbnRlbnNpdHkgPCBWX0hJR0ggKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuOTk7CiAgICAgICAgY29sb3IgPSBSR1gzKHh5LCBzdHJlbmd0aCk7CgogICAgfSBlbHNlIGlmIChpbnRlbnNpdHkgPiBWX01BWCAtIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMTsKICAgICAgICBjb2xvciA9IFJHWDIoeHkpLnJnYjsKICAgIH0KCiAgICByZXR1cm4gZmxvYXQ0KGNvbG9yLCBvcmlnaW5hbENvbG9yLmEpOwp9) -opera-args(1.00 calc(env(-opera-accent-color-r, 255)/255) calc(env(-opera-accent-color-g, 255)/255) calc(env(-opera-accent-color-b, 255)/255)));
+  }
+</style><style type="text/css" data-vite-dev-id="C:/Users/dell/Desktop/Zaib/BackEnd with React 10 project/LMS/src/index.css">@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+}
+img {
+    width: 40px;
+    height: 40px;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/dell/Desktop/Zaib/BackEnd with React 10 project/LMS/src/Mainpages/User/Components/Navbar/Navbar.css">.Navbar {
+    width: 100%;
+    background-color: #DDFBFE;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.1em 0;
+}
+
+.Navbar_box {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar_logo {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar_logo img {
+    width: 8rem;
+}
+
+.Navbar_button {
+    display: flex;
+    gap: 1rem;
+}
+.Navbar_button button {
+   background-color: #2563EB;
+   color: #fff;
+   border: none;
+   padding: 0.7rem 0.8rem;
+   border-radius: 20px;
+   cursor: pointer;
+   
+}
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/dell/Desktop/Zaib/BackEnd with React 10 project/LMS/src/Mainpages/User/Components/Banner/Banner.css">.Banner {
+    width: 100%;
+    height: 90vh;
+  background: linear-gradient(
+    to bottom,
+    #2563EB 0%,
+    #ffffff 100%
+  );
+  padding-top: 10%;
+  margin-bottom: 4rem;
+
+}
+
+.Banner_box {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+
+.Banner_txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Banner_main_txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Banner_main_txt h1 {
+    font-size: 3rem;
+    font-weight:bold;
+    color: #fff;
+    letter-spacing: 1px;
+    -wekit-text-fill-color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.sketch {
+    width: 76%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+
+.sketch img {
+    filter: invert(80%);
+    width: 14rem;
+    height: 1.2rem;
+}
+
+.Banner_txt_dec {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.Banner_txt_dec p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.486);
+    letter-spacing: 1px;
+}
+
+.yellow {
+    color: yellow;
+}
+
+
+/* lets edit the last part of the websit banner  */
+
+
+.Banner_last {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.Banner_last_p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.Banner_last_p p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.71);
+    letter-spacing: 1px;
+}
+
+.Banner_list_companies {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    margin-top: 2rem;
+    gap: 4rem;
+}
+
+
+
+.company img {
+    width: 100px;
+    height: 100px;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/dell/Desktop/Zaib/BackEnd with React 10 project/LMS/src/Mainpages/User/Components/Input/Input.css">.Input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.6em;
+}
+
+.Input_box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+}
+
+.Input_box:hover {
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+
+}
+
+.Input_box img {
+  width: 22px;
+  height: 22px;
+  margin-right: 0.75rem;
+  opacity: 0.8;
+}
+
+.Input_box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #1e3a8a;
+  background: transparent;
+}
+
+.Input_box input::placeholder {
+  color: #9ca3af;
+}
+
+.Input_box button {
+  background-color: #2563EB;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.Input_box button:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/dell/Desktop/Zaib/BackEnd with React 10 project/LMS/src/Mainpages/User/Components/Section/Section.css">.Section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.Section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color:#1f2937e3;
+    letter-spacing: 1px;
+}
+
+.Section p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.6rem;
+    color: rgba(0, 0, 0, 0.441);
+    letter-spacing: 1px;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/dell/Desktop/Zaib/BackEnd with React 10 project/LMS/src/Mainpages/User/Container/Container.css">.Container {
+    width: 100%;
+    height: 64vh;
+    margin-top: 1rem;
+}
+
+.Container_card {
+    width: 80%;
+    margin: auto;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Container_button {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       width: 80%;
+    margin: auto;
+}
+
+.Container_button button {
+    background-color: #2563EB;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/dell/Desktop/Zaib/BackEnd with React 10 project/LMS/src/Mainpages/User/Components/Card/Card.css">.Card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+  height: 100%;
+  max-height:360px;
+  cursor: pointer;
+}
+
+.Card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.25);
+}
+
+/* Banner Image */
+.Card_Banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.Card:hover .Card_Banner img {
+  transform: scale(1);
+}
+
+/* Details Section */
+.Card_detils {
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* Course Title */
+.Card_title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 0.3rem;
+}
+
+/* Seller Name */
+.Card_seller {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+.Card_seller span {
+  color: #2563EB;
+  font-weight: 600;
+}
+
+/* Rating Section */
+.Card_rating {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.9rem;
+  color: #f59e0b;
+  margin: 0.4rem 0;
+}
+.Card_rating img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Price and Button */
+.Card_pice_buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+.Card_pice_buy p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Buy Button */
+.Card_pice_buy button {
+  background: linear-gradient(90deg, #2563EB, #1D4ED8);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Card_pice_buy button:hover {
+  background: linear-gradient(90deg, #1D4ED8, #1E3A8A);
+  transform: scale(1.05);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/dell/Desktop/Zaib/BackEnd with React 10 project/LMS/src/Mainpages/User/Components/Testi/Testis.css">.Testi {
+    width: 100%;
+    height: 60vh;
+}
+
+.Testi_box {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+
+.Testicard {
+    width: 100%;
+    height: 100%;
+    max-width: 260px;
+    max-height: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.Testicard:hover {
+    transform:scaleX(1.01);
+}
+
+
+.Testicard_profile {
+    display: flex;
+    gap: 1rem;
+    height: 26%;
+    align-items: center;
+    background-color: #F0F1F2;
+    padding: 0 1rem;
+}
+
+.Testicard_profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.Testicard_profile p:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.Testicard_profile p:last-child {
+    color: rgba(0, 0, 0, 0.582);
+    font-size: 1rem;
+}
+
+
+
+.Testicard_details {
+    background-color: white;
+    height: 80%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 0.5rem;
+
+}
+
+.Testicard_rating {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+}
+
+.Testicard_details p {
+    color: rgba(0, 0, 0, 0.582);
+    font-size: 1rem;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/dell/Desktop/Zaib/BackEnd with React 10 project/LMS/src/Mainpages/User/Components/Button/Button.css">.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+/* Base button styling */
+.Button button {
+  padding: 0.75rem 1.6rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Primary button (Get Started) */
+.Button button:first-child {
+  background: linear-gradient(90deg, #2563EB, #1D4ED8);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+.Button button:first-child:hover {
+  background: linear-gradient(90deg, #1E40AF, #1E3A8A);
+  transform: translateY(-2px);
+}
+
+/* Secondary button (Learn More) */
+.Button button:last-child {
+  background-color: transparent;
+  border: 2px solid #2563EB;
+  color: #2563EB;
+}
+
+.Button button:last-child:hover {
+  background-color: #2563EB;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Arrow icon */
+.Button button img {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.Button button:last-child:hover img {
+  transform: translateX(5px);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/dell/Desktop/Zaib/BackEnd with React 10 project/LMS/src/MainComponent/Footer/Footer.css">.Footer {
+  width: 100%;
+  background-color: #111827;
+  color: #ffffff;
+  padding: 3rem 0 1rem 0;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+
+}
+
+/* Footer container */
+.Footer_box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* --- Left Section --- */
+.Footer_box1 {
+  flex: 1;
+  min-width: 250px;
+}
+
+.Footer_box1 img {
+  width: 120px;
+  margin-bottom: 1rem;
+  filter: invert(100%);
+}
+
+.Footer_box1 p {
+  color: #d1d5db;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: start;
+}
+
+/* --- Middle Section --- */
+.Footer_box2 {
+  flex: 1;
+  min-width: 200px;
+}
+
+.Footer_box2 h2 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.Footer_box2 h2::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #2563EB;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  border-radius: 2px;
+}
+
+.Footer_box2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Footer_box2 ul li {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.Footer_box2 ul li:hover {
+  color: #2563EB;
+}
+
+/* --- Right Section (Newsletter) --- */
+.Footer_box3 {
+  flex: 1;
+  min-width: 300px;
+}
+
+.Footer_box3 h2 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.Footer_box3 p {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.Footer_input {
+  display: flex;
+  align-items: center;
+  background-color: #1f2937;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.Footer_input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.Footer_input input::placeholder {
+  color: #9ca3af;
+}
+
+.Footer_input button {
+  background-color: #2563EB;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 2rem;
+}
+
+.Footer_input button:hover {
+  background-color: #1d4ed8;
+}
+
+/* --- Bottom Line --- */
+.Footer hr {
+  width: 80%;
+  margin: 2rem auto 1rem auto;
+  border: 0;
+  border-top: 1px solid #374151;
+}
+
+.Footer p {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .Footer_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .Footer_input {
+    flex-direction: column;
+    border-radius: 1rem;
+  }
+  .Footer_input button {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/dell/Desktop/Zaib/BackEnd with React 10 project/LMS/src/Mainpages/User/Components/CPC/Cpc.css">.Cpc {
+    width: 100%;
+    min-height: 100vh;
+    background: #E2FCFE;
+    padding-top: 12vh;
+}
+
+.Cpc_box {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+
+}
+
+.Cpc_box_left {
+    width: 50%;
+    height: 100%;
+}
+
+.Cpc_box_left_part1 {
+    padding: 2rem;
+}
+
+.Cpc_title {
+    font-size: 1.1em;
+    color: black;
+    margin-bottom: 1.6rem;
+}
+
+.Cpc_dec {
+    color: rgba(0, 0, 0, 0.562);
+    font-size: 1.1em;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.Cpc_Rating {
+    display: flex;
+    margin-top: 2rem;
+    gap: 6px;
+    color: rgba(0, 0, 0, 0.562);
+    margin-bottom: 1rem;
+}
+
+.Cpc_Rating_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Cpc_Rating_img img {
+    width: 16px;
+    height: 16px;
+}
+
+.blow {
+    color: rgba(0, 0, 255, 0.737);
+}
+
+.Cpc_box_left_part2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 40vh;
+    overflow: auto;
+}
+
+.structure {
+    padding: 2rem;
+}
+
+
+
+.Cpc_decription {
+    padding: 2rem;
+}
+
+.Cpc_decription h2 {
+    font-size: 1.1em;
+    color: black;
+    margin-bottom: 1.6rem;
+}
+
+.Cpc_decription_box {
+    padding: 1rem;
+    color: rgba(0, 0, 0, 0.562);
+    font-size: 1.1em;
+    overflow: hidden;
+    width: 100%;
+}
+
+.Cpc_decription_box p {
+    margin-bottom: 1rem;
+}
+
+.Cpc_decription_box ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.Cpc_decription_box li {
+    margin-bottom: 0.5rem;
+}
+
+.Cpc_decription_box h2 {
+    font-weight: bold;
+    -wkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+}
+
+.Cpc_box_right {
+    width: 50%;
+    height: 100%;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/dell/Desktop/Zaib/BackEnd with React 10 project/LMS/src/Mainpages/User/Components/CourseS/CourseS.css">.CourseS {
+     width: 100%;
+         background-color:#FFFFFF;
+}
+
+.CourseS button {
+    background-color:transparent;
+    border: none;
+    outline: none;
+    color: blue;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.chepter {
+    width: 100%;
+    background-color:#FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:1rem;
+    padding: 0.9rem 2px;
+    color: rgba(0, 0, 0, 0.721);
+    border-radius: 10px ;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+}
+
+.chepter img {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.chepter h3 {
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+
+
+.lectures {
+    width: 100%;
+    padding: 10px 10px;
+  
+    color: rgba(0, 0, 0, 0.721);
+}
+ 
+.lecture {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+        gap: 0.4rem;
+}
+.play {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+.lecture img {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.red {
+    transform: rotate(180deg);
+}</style><style type="text/css" data-vite-dev-id="C:/Users/dell/Desktop/Zaib/BackEnd with React 10 project/LMS/src/Mainpages/preview/preview.css">.Preview {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.Preview_box {
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.Preview_box:hover {
+  transform: translateY(-1px);
+}
+
+.Preview_thumbnial {
+  width: 100%;
+  height: 34%;
+  overflow: hidden;
+}
+
+.Preview_thumbnial img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Preview_detils {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.Preview_detils p {
+  display: flex;
+  gap: 6px;
+  font-weight: 500;
+  color: #dc2626; /* red warning tone */
+margin-bottom: 10px;
+}
+
+.Preview_detils p img {
+  width: 18px;
+  height: 18px;
+}
+
+.Preview_pricing {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.DiscountP p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.ActualP p {
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.discount p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #16a34a; /* green for discount */
+}
+
+.buyNow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buyNow button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.8rem 10rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buyNow button:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+dl {
+  width: 100%;
+  padding: 0 2rem 2rem;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 10px;
+}
+dd {
+    margin-bottom: 4px;
+}
+dl dt {
+    
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #374151;
+  font-size: 1rem;
+  margin-bottom: 0.1rem;
+}
+
+dl dt span {
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Preview_box {
+    width: 90%;
+  }
+
+  .Preview_detils {
+    padding: 1rem;
+  }
+
+  .Preview_pricing {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .buyNow button {
+    width: 100%;
+  }
+}
+</style></head>
+  <body>
+    <div id="root"><div class="Navbar"><div class="Navbar_box"><div class="Navbar_logo"><a href="http://localhost:5173/" data-discover="true">  <img alt="" src="./lms_files/logo.svg"></a></div><div class="Navbar_button"><button>Become Instructor</button><button>create Account</button></div></div></div><hr><div class="Banner"><div class="Banner_box"><div class="Banner_txt"><div class="Banner_main_txt"><h1>Empower your future with the <br>courses designed to <span class="yellow">fit your choice.</span></h1><div class="sketch"><img alt="" src="./lms_files/sktech.svg"></div></div><div class="Banner_txt_dec"><p>We bring together world-class instructors, interactive content, and a supportive community to help you achieve your personal and professional goals.</p></div></div><div class="Input"><div class="Input_box"><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;18&#39;%20viewBox=&#39;0%200%2018%2018&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M12.3828%2012.3828L17.1408%2017.1415&#39;%20stroke=&#39;%237A7B7D&#39;%20stroke-width=&#39;1.2&#39;%20stroke-linecap=&#39;round&#39;%20stroke-linejoin=&#39;round&#39;/%3e%3cpath%20fill-rule=&#39;evenodd&#39;%20clip-rule=&#39;evenodd&#39;%20d=&#39;M10.4451%2013.6915C13.5634%2012.3662%2015.0169%208.7641%2013.6917%205.64585C12.3665%202.52761%208.76432%201.07408%205.64608%202.3993C2.52783%203.72452%201.0743%207.32666%202.39953%2010.4449C3.72475%2013.5631%207.32688%2015.0167%2010.4451%2013.6915Z&#39;%20stroke=&#39;%237A7B7D&#39;%20stroke-width=&#39;1.2&#39;%20stroke-linecap=&#39;round&#39;%20stroke-linejoin=&#39;round&#39;/%3e%3c/svg%3e"><input placeholder="search for course" type="text"><button>Search</button></div></div><div class="Banner_last"><div class="Banner_last_p"><p>Trusted by learners from</p></div><div class="Banner_list_companies"><div class="company"><img alt="" src="./lms_files/accenture_logo.svg"></div><div class="company"><img alt="" src="./lms_files/adobe_logo.svg"></div><div class="company"><img alt="" src="./lms_files/walmart_logo.svg"></div><div class="company"><img alt="" src="./lms_files/paypal_logo.svg"></div><div class="company"><img alt="" src="./lms_files/microsoft_logo.svg"></div></div></div></div></div><div class="Section"><h2>Learn from the best</h2><p>Discover our top-rated courses across various categories. From coding and design to business and wellness, our courses are crafted to deliver results.</p></div><div class="Container"><div class="Container_card"><div class="Card"><div class="Card_Banner"><img alt="" src="./lms_files/course_1.png"></div><div class="Card_detils"><div class="Card_title">Advanced Python Programming</div><div class="Card_seller">by <span>John Doe</span></div><div class="Card_rating"><span>4.5</span><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><span>(1000)</span></div><div class="Card_pice_buy"><p>$79.99</p><a href="http://localhost:5173/course/6" data-discover="true"> <button>Buy Now</button></a></div></div></div><div class="Card"><div class="Card_Banner"><img alt="" src="./lms_files/course_1.png"></div><div class="Card_detils"><div class="Card_title">Advanced Python Programming</div><div class="Card_seller">by <span>John Doe</span></div><div class="Card_rating"><span>4.5</span><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><span>(1000)</span></div><div class="Card_pice_buy"><p>$79.99</p><a href="http://localhost:5173/course/6" data-discover="true"> <button>Buy Now</button></a></div></div></div><div class="Card"><div class="Card_Banner"><img alt="" src="./lms_files/course_1.png"></div><div class="Card_detils"><div class="Card_title">Advanced Python Programming</div><div class="Card_seller">by <span>John Doe</span></div><div class="Card_rating"><span>4.5</span><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><span>(1000)</span></div><div class="Card_pice_buy"><p>$79.99</p><a href="http://localhost:5173/course/6" data-discover="true"> <button>Buy Now</button></a></div></div></div><div class="Card"><div class="Card_Banner"><img alt="" src="./lms_files/course_1.png"></div><div class="Card_detils"><div class="Card_title">Advanced Python Programming</div><div class="Card_seller">by <span>John Doe</span></div><div class="Card_rating"><span>4.5</span><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><span>(1000)</span></div><div class="Card_pice_buy"><p>$79.99</p><a href="http://localhost:5173/course/6" data-discover="true"> <button>Buy Now</button></a></div></div></div></div><div class="Container_button"><button>Show all courses</button></div></div><div class="Section"><h2>Testimonials</h2><p>Hear from our learners as they share their journeys of transformation, success, and how our  platform has made a difference in their lives.</p></div><div class="Testi"><div class="Testi_box"><div class="Testicard"><div class="Testicard_profile"><img alt="" src="./lms_files/profile_img.png"><div class="Testicard_name"><p>John Doe</p><p>Web Developer</p></div></div><div class="Testicard_details"><div class="testicard_rating"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"></div><p>I've been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.</p><a href="http://localhost:5173/">See more</a></div></div><div class="Testicard"><div class="Testicard_profile"><img alt="" src="./lms_files/profile_img.png"><div class="Testicard_name"><p>John Doe</p><p>Web Developer</p></div></div><div class="Testicard_details"><div class="testicard_rating"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"></div><p>I've been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.</p><a href="http://localhost:5173/">See more</a></div></div><div class="Testicard"><div class="Testicard_profile"><img alt="" src="./lms_files/profile_img.png"><div class="Testicard_name"><p>John Doe</p><p>Web Developer</p></div></div><div class="Testicard_details"><div class="testicard_rating"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"><img class="img" alt="" src="data:image/svg+xml,%3csvg%20width=&#39;18&#39;%20height=&#39;17&#39;%20viewBox=&#39;0%200%2018%2017&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M8.52447%200.463525C8.67415%200.00287008%209.32585%200.00287008%209.47553%200.463525L11.1329%205.56434C11.1998%205.77035%2011.3918%205.90983%2011.6084%205.90983H16.9717C17.4561%205.90983%2017.6575%206.52964%2017.2656%206.81434L12.9266%209.96681C12.7514%2010.0941%2012.678%2010.3198%2012.745%2010.5258L14.4023%2015.6266C14.552%2016.0873%2014.0248%2016.4704%2013.6329%2016.1857L9.29389%2013.0332C9.11865%2012.9059%208.88135%2012.9059%208.70611%2013.0332L4.3671%2016.1857C3.97524%2016.4704%203.448%2016.0873%203.59768%2015.6266L5.25503%2010.5258C5.32197%2010.3198%205.24864%2010.0941%205.07339%209.96681L0.734384%206.81434C0.342527%206.52964%200.543915%205.90983%201.02828%205.90983H6.39159C6.6082%205.90983%206.80018%205.77035%206.86712%205.56434L8.52447%200.463525Z&#39;%20fill=&#39;%23FF532E&#39;/%3e%3c/svg%3e"></div><p>I've been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.</p><a href="http://localhost:5173/">See more</a></div></div></div></div><div class="Section"><h2>Learn anything, anytime, anywhere</h2><p>Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p></div><div class="Button"><button>Get started</button><button>Leran more <img alt="" src="data:image/svg+xml,%3csvg%20width=&#39;15&#39;%20height=&#39;11&#39;%20viewBox=&#39;0%200%2015%2011&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M0.998935%205.5L14.0898%205.5&#39;%20stroke=&#39;%231F2937&#39;%20stroke-width=&#39;1.5&#39;%20stroke-linecap=&#39;round&#39;%20stroke-linejoin=&#39;round&#39;/%3e%3cpath%20d=&#39;M8.94699%201L14.0898%205.5L8.94699%2010&#39;%20stroke=&#39;%231F2937&#39;%20stroke-width=&#39;1.5&#39;%20stroke-linecap=&#39;round&#39;%20stroke-linejoin=&#39;round&#39;/%3e%3c/svg%3e"></button></div><div class="Footer"><div class="Footer_box"><div class="Footer_box1"><img alt="" src="./lms_files/logo.svg"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p></div><div class="Footer_box2"><h2>Company</h2><ul><li>Home</li><li>About us</li><li>Contact</li><li>Blog</li><li>Privacy Policy</li></ul></div><div class="Footer_box3"><h2>Subscribe to our newsletter</h2><p>The latest news, articles, and resources, sent to your </p><div class="Footer_input"><input placeholder="Enter your Email" id="" type="text" name=""><button>Subscribe</button></div></div></div><hr><p>© 2026 Zaib . All Rights Reserved</p></div></div>
+    <script type="module" src="./lms_files/main.jsx"></script>
+  
+
+</body></html>

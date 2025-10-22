@@ -1,0 +1,43 @@
+.Navbar {
+    width: 100%;
+    background-color: #DDFBFE;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.1em 0;
+}
+
+.Navbar_box {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar_logo {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar_logo img {
+    width: 8rem;
+}
+
+.Navbar_button {
+    display: flex;
+    gap: 1rem;
+}
+.Navbar_button button {
+   background-color: #2563EB;
+   color: #fff;
+   border: none;
+   padding: 0.7rem 0.8rem;
+   border-radius: 20px;
+   cursor: pointer;
+   
+}
+
