@@ -1,12 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-      font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 img {
     width: 40px;
     height: 40px;
+}
+
+
+
+/* 🌎 Global Smooth Transitions for Your Entire App */
+* {
+    transition: all 0.3s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+/* ✨ Optional: smooth fade effect when navigating pages */
+body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+    scroll-behavior: smooth;
+}
+
+/* 🪶 Optional: hover feel for buttons and links */
+button,
+a {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+a:hover {
+    transform: translateY(-2px);
+}
+
+/* 🌙 Optional: image smooth appearance */
+img {
+    transition: opacity 0.4s ease, transform 0.3s ease;
 }

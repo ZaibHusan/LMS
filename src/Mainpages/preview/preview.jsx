@@ -2,19 +2,25 @@ import React from 'react'
 import "./preview.css"
 import { assets } from '../../assets/assets'
 
-export default function preview() {
+export default function preview({productDetils}) {
+    const productactuallprice = (discount, discountedprice) => {
+        let discountindecimal = discount / 100;
+        let discountin1 = 1 - discountindecimal;
+        const actualprice = discountedprice / discountin1;
+        return actualprice.toFixed(2);
+    }
     return (
         <div className="Preview">
             <div className="Preview_box">
                 <div className="Preview_thumbnial">
-                    <img src={assets.course_1_thumbnail} alt="" />
+                    <img src={productDetils.image} alt="" />
                 </div>
                 <div className="Preview_detils">
                     <p> <img src={assets.time_left_clock_icon} alt="" />5 days left at this price!</p>
                     <div className="Preview_pricing">
-                        <div className="DiscountP"><p>$79.99</p></div>
-                        <div className="ActualP"><p>$99.99</p></div>
-                        <div className="discount"><p>20% off</p></div>
+                        <div className="DiscountP"><p>${productDetils.price}</p></div>
+                        <div className="ActualP"><p>${productactuallprice(productDetils.discount, productDetils.price)}</p></div>
+                        <div className="discount"><p>{productDetils.discount}% off</p></div>
                     </div>
                 </div>
                 <div className="buyNow"><button>Buy Now</button></div>
