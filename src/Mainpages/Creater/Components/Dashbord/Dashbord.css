@@ -1,0 +1,8 @@
+.Dashbord {
+    height: 90vh;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

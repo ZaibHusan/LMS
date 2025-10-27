@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react'
 import courseData from './coursedata'
-
+import { buyers } from './coursedata';
 
 
 // Creating context for overall course data management
@@ -28,7 +28,7 @@ export default function Coursecontainer({ children }) {
   }, [title, courseData]);
   return (
     <div>
-      <courseDataContext.Provider value={{ finalCourseData, title, setTitle }}>
+      <courseDataContext.Provider value={{ finalCourseData, title, setTitle,buyers }}>
         {children}
       </courseDataContext.Provider>
     </div>

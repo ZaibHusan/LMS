@@ -1,0 +1,219 @@
+.Addcourse {
+  width: 90%;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px 40px;
+  margin-top: 15px;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+
+  /* 👇 Scroll after a specific height */
+  max-height: 80vh; /* You can change this value */
+  overflow-y: auto; /* Only vertical scroll */
+  overflow-x: hidden; /* Hide horizontal scroll */
+}
+
+.Addcourse h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* === Form Styles === */
+.addcourse-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #2563eb;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* === Course Structure === */
+.Course_structure {
+  background: #f9fafb;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.Add_unit h3 {
+  color: #1e40af;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.Unit_lectures {
+  margin-top: 12px;
+  background: #f1f5f9;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #2563eb;
+}
+
+.Unit_lectures label {
+  color: #475569;
+}
+
+.Unit_lectures input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* === Description Section === */
+.Description_course {
+  margin-top: 20px;
+}
+
+/* === File Input === */
+input[type="file"] {
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+/* === Submit Button === */
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1e40af;
+  transform: scale(1.02);
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .Addcourse {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .Addcourse h1 {
+    font-size: 22px;
+  }
+
+  input,
+  textarea,
+  button {
+    font-size: 15px;
+  }
+}
+
+
+
+
+/* General button style */
+button {
+  background-color: #007bff;       /* Primary blue */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 6px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+
+/* Add buttons */
+button[type="button"] {
+  background-color: #28a745;  /* Green for Add */
+}
+button[type="button"]:hover {
+  background-color: #218838;
+}
+
+/* Remove buttons */
+button[type="button"]:has(> svg), 
+button[type="button"]:contains("Remove"),
+button:contains("❌"), 
+button:contains("🗑️") {
+  background-color: #dc3545;  /* Red for Remove */
+}
+button[type="button"]:hover:has(> svg), 
+button[type="button"]:hover:contains("Remove"),
+button:hover:contains("❌"), 
+button:hover:contains("🗑️") {
+  background-color: #c82333;
+}
+
+/* Submit button */
+.addcourse-button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #0069d9;
+  font-size: 16px;
+  font-weight: bold;
+}
+.addcourse-button:hover {
+  background-color: #0053a4;
+}
+
+/* Optional: spacing between form elements */
+.addcourse-form input,
+.addcourse-form textarea {
+  margin-bottom: 10px;
+}
+
+/* Nice section spacing */
+.Add_unit, .Unit_lectures {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 12px;
+  background-color: #f8f9fa;
+}
