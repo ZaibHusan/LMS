@@ -23,8 +23,6 @@
 }
 
 
-.courselayout_part2 {
-}
 
 
 .courselayout_part2 .Tag {
@@ -63,7 +61,7 @@
     width: 100%;
     min-height: 60vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 6rem 2rem;
         flex-wrap: wrap;
