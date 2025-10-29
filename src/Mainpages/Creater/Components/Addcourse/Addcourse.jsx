@@ -106,7 +106,7 @@ export default function Addcourse() {
     };
 
     try {
-      const response = await fetch('http://localhost:3000/getin', {
+      const response = await fetch('https://lms-back-end-mu.vercel.app/getin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(courseData),

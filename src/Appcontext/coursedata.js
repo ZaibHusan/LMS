@@ -3,7 +3,7 @@ import { assets } from "../assets/assets";
 
 let fetchingcourse = async () => {
   try {
-    const response = await fetch("http://localhost:3000/getout");
+    const response = await fetch("https://lms-back-end-mu.vercel.app/getout");
     const data = await response.json();
     return data;
   } catch (error) {
