@@ -12,6 +12,15 @@ const clearFilter = () => {
     setTitle("");
 }
 
+
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  React.useEffect(() => {
+    scrollToTop();
+  }, []);
+
     return (
         <div className="Courselayout">
             <div className="courselayout_box">
