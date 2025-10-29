@@ -26,11 +26,17 @@ export default function Coursecontainer({ children }) {
   useEffect(() => {
     filterCourseFunction();
   }, [title, courseData]);
+
+
+
   return (
     <div>
-      <courseDataContext.Provider value={{ finalCourseData, title, setTitle,buyers }}>
+      <courseDataContext.Provider value={{ finalCourseData, title, setTitle, buyers, }}>
         {children}
       </courseDataContext.Provider>
     </div>
   )
 }
+
+
+
