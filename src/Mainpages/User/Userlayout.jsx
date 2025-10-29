@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Banner from './Components/Banner/Banner'
 import Section from './Components/Section/Section'
@@ -8,6 +8,15 @@ import Button from './Components/Button/Button'
 import Footer from '../../MainComponent/Footer/Footer'
 
 export default function Userlayout() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   return (
     <>
     <Navbar />
