@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Addcourse.css';
+import { courseDataContext } from '../../../../Appcontext/Coursecontainer';
 
 export default function Addcourse() {
-
+const {userData , setuserData} = useContext(courseDataContext)
   const [formData, setFormData] = useState({
     title: '',
     description: '',

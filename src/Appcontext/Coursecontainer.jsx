@@ -11,6 +11,11 @@ export const courseDataContext = createContext("");
 export default function Coursecontainer({ children }) {
   const [finalCourseData, setFinalCourseData] = useState(courseData);
   const [title, setTitle] = useState("");
+  const [userData,setuserData] = useState({
+    islogin : false,
+    Username : '',
+    Gmail : '',
+  });
 
   const filterCourseFunction = () => {
     if (!title.trim()) {
@@ -31,7 +36,7 @@ export default function Coursecontainer({ children }) {
 
   return (
     <div>
-      <courseDataContext.Provider value={{ finalCourseData, title, setTitle, buyers, }}>
+      <courseDataContext.Provider value={{ finalCourseData, title, setTitle, buyers, userData ,setuserData}}>
         {children}
       </courseDataContext.Provider>
     </div>

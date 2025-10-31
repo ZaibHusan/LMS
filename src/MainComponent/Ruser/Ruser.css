@@ -1,0 +1,107 @@
+/* Main container */
+.Ruser {
+   background: linear-gradient(to right, #000000, #333333, #cccccc, #ffffff);
+
+    min-height: 100vh;          /* full screen height */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    box-sizing: border-box;
+}
+
+/* Center box for form */
+.Register_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Inner form styling */
+.inner_form {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px solid #ffeb3b; /* yellow border */
+    border-radius: 10px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px; /* max width for desktop */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Form header */
+.inner_form h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+/* Form itself */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Input fields */
+form input {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border 0.3s;
+    outline: none;
+}
+
+/* Input focus effect */
+form input:focus {
+    border-color: #2196f3;
+}
+
+/* Button */
+form button {
+    padding: 1rem;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive for mobile */
+@media (max-width: 500px) {
+    .inner_form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
+
+
+#toggleButton {
+    padding: 0;
+    margin: 0;
+    background-color: non;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: white;
+    color: blue;
+}
+
+.redp{
+    color: red;
+    font-size: 0.7rem;
+    text-align: center;
+}

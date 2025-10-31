@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Right.css'
 import { assets } from '../../../../assets/assets'
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts'
+import { courseDataContext } from '../../../../Appcontext/Coursecontainer'
 
 export default function MainDashbord() {
 
@@ -15,6 +16,10 @@ export default function MainDashbord() {
     { month: 'May', earnings: 1600, students: 200 },
   ]
 
+const {userData, setuserData} = useContext(courseDataContext);
+
+console.log(userData);
+
   return (
     <div className='Right'>
       <div className="Right_part1">
@@ -24,7 +29,7 @@ export default function MainDashbord() {
             <div className="profile">
               <img src={assets.profile_img} alt="Trainer" />
             </div>
-            <h1>Trainer Name</h1>
+            <h1>{userData.Username}</h1>
           </div>
 
           <div className="trainer_stats">

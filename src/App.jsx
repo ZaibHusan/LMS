@@ -5,6 +5,7 @@ import Userlayout from './Mainpages/User/Userlayout'
 import Coursespage from './Mainpages/User/Pages/Coursespage/Coursespage'
 import Footer from './MainComponent/Footer/Footer'
 import CourseList from './Mainpages/User/Pages/CourseList/CourseList'
+import Ruser from './MainComponent/Ruser/Ruser'
 
 export default function App() {
   const pagetop = () => {
@@ -24,7 +25,7 @@ export default function App() {
         <Route path='creater'>
           <Route index element={<Createrlayout />} />
         </Route>
-
+        <Route path='/Ruser' element={<Ruser />} />
       </Routes>
       <Footer />
     </>
