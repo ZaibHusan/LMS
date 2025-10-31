@@ -105,3 +105,47 @@ form button:hover {
     font-size: 0.7rem;
     text-align: center;
 }
+
+
+
+
+
+/* lets add css for the loading button */
+
+
+.loader {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(145deg, #000, #111);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.loader p {
+  margin: 0;
+}
+
+.loader span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: loadingDots 0.8s infinite ease-in-out;
+}
+
+@keyframes loadingDots {
+  0%, 80%, 100% {
+    transform: scale(0);
+    opacity: 0.4;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

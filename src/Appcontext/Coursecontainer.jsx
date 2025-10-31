@@ -10,6 +10,7 @@ export const courseDataContext = createContext("");
 
 export default function Coursecontainer({ children }) {
   const [finalCourseData, setFinalCourseData] = useState(courseData);
+  const [buttonshow, setbuttonshow] = useState(true);
   const [title, setTitle] = useState("");
   const [userData,setuserData] = useState({
     islogin : false,
@@ -36,7 +37,7 @@ export default function Coursecontainer({ children }) {
 
   return (
     <div>
-      <courseDataContext.Provider value={{ finalCourseData, title, setTitle, buyers, userData ,setuserData}}>
+      <courseDataContext.Provider value={{ finalCourseData, title, setTitle, buyers, userData ,setuserData , buttonshow, setbuttonshow}}>
         {children}
       </courseDataContext.Provider>
     </div>

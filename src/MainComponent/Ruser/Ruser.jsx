@@ -1,4 +1,4 @@
-import React, { use, useContext, useState } from 'react'
+import React, { use, useContext, useEffect, useRef, useState } from 'react'
 import "./Ruser.css"
 import Navbar from '../../Mainpages/User/Components/Navbar/Navbar'
 import { useNavigate } from 'react-router-dom'
@@ -7,7 +7,14 @@ export default function Ruser() {
     let navigate = useNavigate();
     const [userstatus, setsuerstatus] = useState(false)
     const [error, seterror] = useState('')
-    const { userData, setuserData } = useContext(courseDataContext)
+    const { userData, setuserData, buttonshow, setbuttonshow } = useContext(courseDataContext)
+    const btnref = useRef();
+
+    // lets make a use effect for the buttton showing and hidding 
+
+
+
+
     const [showp, setshowp] = useState(true)
     const [Data, setData] = useState({
         username: '',
@@ -31,6 +38,7 @@ export default function Ruser() {
 
     async function submitData(params) {
         console.log("button was clicked")
+        setbuttonshow(false)
         // create a api for sign up
         if (!userstatus) {
             let req = await fetch("https://lms-back-end-mu.vercel.app/registeruser", {
@@ -39,8 +47,9 @@ export default function Ruser() {
                 body: JSON.stringify(Data)
             })
             let reqData = await req.json();
-            const {islogin, data} = reqData;
-            console.log("islogin ", islogin , "data", data)
+            setbuttonshow(true)
+            const { islogin, data } = reqData;
+            console.log("islogin ", islogin, "data", data)
             if (islogin) {
                 setuserData({
                     islogin: true,
@@ -50,15 +59,15 @@ export default function Ruser() {
                 navigate("/")
                 seterror("")
                 console.log(userData)
-            } 
-            if(!islogin){
+            }
+            if (!islogin) {
                 setuserData({
                     islogin: false,
                 })
                 console.log(userData)
                 seterror(`${data} please enter unique info`)
             }
-            
+
         }
 
 
@@ -74,6 +83,7 @@ export default function Ruser() {
                 })
             })
             let reqData = await req.json();
+            setbuttonshow(true)
             const { loginsuccess } = reqData;
             if (loginsuccess) {
                 const { data } = reqData;
@@ -86,11 +96,11 @@ export default function Ruser() {
                 seterror("")
                 console.log(userData)
             } else {
-               
+
                 setuserData({
                     islogin: false,
                 })
-            console.log(userData)
+                console.log(userData)
                 seterror("The user not exist please enter correct information")
             }
         }
@@ -113,7 +123,8 @@ export default function Ruser() {
                             <input type="password" placeholder='Password' name='password' value={Data.password} onChange={handlechange} />
                             <p>if you {userstatus ? "have" : "don't have"} an account click here <button id='toggleButton' type='button' onClick={() => { setsuerstatus(!userstatus) }}>Sign in</button></p>
                             {error.length > 10 ? <p className='redp'>{error}</p> : ""}
-                            <button type='submit' onClick={submitData} >{userstatus ? "Sign up" : "Sign in"}</button>
+                            {buttonshow ? <button type='submit' onClick={submitData} >{userstatus ? "Sign up" : "Sign in"}</button> : <div className="loader"><p>Loading</p><span></span></div>
+                            }
                         </form>
                     </div>
                 </div>
