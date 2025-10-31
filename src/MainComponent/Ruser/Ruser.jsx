@@ -123,7 +123,7 @@ export default function Ruser() {
                             <input type="password" placeholder='Password' name='password' value={Data.password} onChange={handlechange} />
                             <p>if you {userstatus ? "have" : "don't have"} an account click here <button id='toggleButton' type='button' onClick={() => { setsuerstatus(!userstatus) }}>Sign in</button></p>
                             {error.length > 10 ? <p className='redp'>{error}</p> : ""}
-                            {buttonshow ? <button type='submit' onClick={submitData} >{userstatus ? "Sign up" : "Sign in"}</button> : <div className="loader"><p>Loading</p><span></span></div>
+                            {buttonshow ? <button type='submit' onClick={submitData} >{userstatus ? "Sign up" : "Sign in"}</button> : <div style={{backgroundColor:'darkblue'}} className="loader"><p>Loading</p><span></span></div>
                             }
                         </form>
                     </div>
